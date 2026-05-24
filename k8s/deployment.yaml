@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/guilhermebsilva/workshop-backend:latest
+          image: workshop-backend:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           readinessProbe:
